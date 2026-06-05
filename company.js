@@ -4,7 +4,7 @@ import { querySOLR, deleteJobsByCIF } from "./solr.js";
 import { getCompanyFromANAF, searchCompany, getCompanyFromANAFWithFallback } from "./src/anaf.js";
 
 const Peviitor_API_URL = "https://api.peviitor.ro/v1/company/";
-const COMPANY_BRAND = "SOFTECH";
+const COMPANY_BRAND = "SOFTECH SRL";
 
 export function getCompanyBrand() {
   return COMPANY_BRAND;
@@ -132,13 +132,23 @@ export async function getCompanyData() {
       throw new Error(`No companies found for brand: ${COMPANY_BRAND}`);
     }
 
+    const brandUpper = COMPANY_BRAND.toUpperCase();
+
     const exactMatch = searchResults.find(c =>
-      (c.name.toUpperCase().startsWith(COMPANY_BRAND.toUpperCase() + " ") ||
-       c.name.toUpperCase().includes(" " + COMPANY_BRAND.toUpperCase() + " ")) &&
+      c.name.toUpperCase() === brandUpper &&
       c.statusLabel === "Funcțiune"
     );
 
-    if (!exactMatch) {
+    const wordMatch = !exactMatch ? searchResults.find(c =>
+      (c.name.toUpperCase().startsWith(brandUpper + " ") ||
+       c.name.toUpperCase().includes(" " + brandUpper + " ") ||
+       c.name.toUpperCase() === brandUpper) &&
+      c.statusLabel === "Funcțiune"
+    ) : null;
+
+    const selected = exactMatch || wordMatch;
+
+    if (!selected) {
       console.log("No exact match with 'Funcțiune' status, trying first active company...");
       const activeMatch = searchResults.find(c => c.statusLabel === "Funcțiune");
       if (!activeMatch) {
@@ -147,8 +157,8 @@ export async function getCompanyData() {
       var selectedCIF = activeMatch.cui;
       console.log(`Selected: ${activeMatch.name} (CIF: ${selectedCIF})`);
     } else {
-      var selectedCIF = exactMatch.cui;
-      console.log(`Found exact match: ${exactMatch.name} (CIF: ${selectedCIF})`);
+      var selectedCIF = selected.cui;
+      console.log(`Found match: ${selected.name} (CIF: ${selectedCIF})`);
     }
 
     console.log(`Fetching company details for CIF: ${selectedCIF}`);

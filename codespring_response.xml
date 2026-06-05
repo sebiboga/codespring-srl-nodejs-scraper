@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
+  <channel>
+    <title>Codespring &amp; SOFTECH - Cariere</title>
+    <atom:link href="https://www.codespring.ro/category/jobs/feed" rel="self" type="application/rss+xml"/>
+    <link>https://www.codespring.ro</link>
+    <description>Joburi la Codespring si SOFTECH</description>
+    <lastBuildDate>Thu, 16 Apr 2026 10:00:00 +0000</lastBuildDate>
+    <language>en-US</language>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <item>
+      <title>UX/UI Designer</title>
+      <link>https://www.codespring.ro/job/ux-ui-designer/</link>
+      <pubDate>Mon, 24 Mar 2025 09:18:48 +0000</pubDate>
+      <dc:creator><![CDATA[codespring]]></dc:creator>
+      <guid isPermaLink="false">https://www.codespring.ro/?post_type=job_listing&p=1234</guid>
+      <description><![CDATA[We are looking for a UX/UI Designer to join our team in Cluj-Napoca. Hybrid work mode.]]></description>
+      <content:encoded><![CDATA[<p>We are looking for a UX/UI Designer to join our team in Cluj-Napoca. Hybrid work mode.</p>]]></content:encoded>
+      <category domain="category" nicename="jobs">Jobs</category>
+    </item>
+    <item>
+      <title>System/Cloud Administrator</title>
+      <link>https://www.codespring.ro/job/system-cloud-administrator/</link>
+      <pubDate>Mon, 10 Mar 2025 14:11:54 +0000</pubDate>
+      <dc:creator><![CDATA[codespring]]></dc:creator>
+      <guid isPermaLink="false">https://www.codespring.ro/?post_type=job_listing&p=1235</guid>
+      <description><![CDATA[We are looking for a System/Cloud Administrator to join our team in Cluj-Napoca. Hybrid work mode.]]></description>
+      <content:encoded><![CDATA[<p>We are looking for a System/Cloud Administrator to join our team in Cluj-Napoca. Hybrid work mode.</p>]]></content:encoded>
+      <category domain="category" nicename="jobs">Jobs</category>
+    </item>
+    <item>
+      <title>Junior Software Developer</title>
+      <link>https://www.codespring.ro/job/junior-software-developer/</link>
+      <pubDate>Fri, 14 Mar 2025 13:25:24 +0000</pubDate>
+      <dc:creator><![CDATA[codespring]]></dc:creator>
+      <guid isPermaLink="false">https://www.codespring.ro/?post_type=job_listing&p=1236</guid>
+      <description><![CDATA[We are looking for a Junior Software Developer to join our team in Cluj-Napoca. Hybrid work mode.]]></description>
+      <content:encoded><![CDATA[<p>We are looking for a Junior Software Developer to join our team in Cluj-Napoca. Hybrid work mode.</p>]]></content:encoded>
+      <category domain="category" nicename="jobs">Jobs</category>
+    </item>
+  </channel>
+</rss>

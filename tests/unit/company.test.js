@@ -95,7 +95,7 @@ describe('company.js', () => {
     it('should return the company brand', () => {
       const brand = company.getCompanyBrand();
       expect(typeof brand).toBe('string');
-      expect(brand).toBe('SOFTECH');
+      expect(brand).toBe('SOFTECH SRL');
     });
   });
 

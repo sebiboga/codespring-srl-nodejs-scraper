@@ -14,7 +14,7 @@ function itIfSolr(description, testFn) {
 
 describe('ANAF Integration Tests', () => {
   it('should fetch SOFTECH SRL company data from ANAF', async () => {
-    const { getCompanyFromANAF } = await import('../src/anaf.js');
+    const { getCompanyFromANAF } = await import('../../src/anaf.js');
     const data = await getCompanyFromANAF('11358358');
 
     expect(data).toBeDefined();
