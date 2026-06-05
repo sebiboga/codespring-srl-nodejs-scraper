@@ -4,22 +4,22 @@
 
 | Field  | Type   | Description |
 |--------|--------|-------------|
-| url    | string | Full URL to job detail page. Must be valid HTTP/HTTPS URL |
+| url    | string | Full URL to job detail page. Unique. Must be valid HTTP/HTTPS URL, canonical job detail page |
 | title  | string | Position title. Max 200 chars, no HTML, trimmed whitespace. DIACRITICS ACCEPTED (ăâîșțĂÂÎȘȚ) |
 
 ## Optional Fields
 
 | Field            | Type     | Description |
 |------------------|----------|-------------|
-| company          | string   | Hiring company name. Legal name, uppercase, DIACRITICS ACCEPTED |
+| company          | string   | Hiring company name. Legal name, uppercase, must match Company.name exactly |
 | cif              | string   | CIF/CUI (8 digits, no RO prefix) |
 | location         | string[] | Romanian cities/addresses. DIACRITICS ACCEPTED. Multi-valued array |
-| tags             | string[] | Skills/education/experience. Lowercase, max 20 entries, NO DIACRITICS |
+| tags             | string[] | Skills/education/experience. Lowercase, max 20 entries, standardized values only, NO DIACRITICS |
 | workmode         | string   | "remote", "on-site", or "hybrid" |
-| date             | date     | Scrape date. ISO8601 UTC timestamp |
-| status           | string   | "scraped", "tested", "published", or "verified". Default: "scraped" |
-| vdate            | date     | Verified date. ISO8601. Set only when status="verified" |
-| expirationdate   | date     | Estimated job expiration. ISO8601 |
+| date             | date     | Scrape date. ISO8601 UTC timestamp (ex: "2026-01-18T10:00:00Z") |
+| status           | string   | "scraped", "tested", "published", or "verified". Default: "scraped". Progression: scraped → (tested OR verified) → published |
+| vdate            | date     | Verified date. ISO8601. Set only when status="tested" or "verified" |
+| expirationdate   | date     | Estimated job expiration. ISO8601. vdate + 30 days max, or extract from job page |
 | salary           | string   | Salary range + currency. Format: "MIN-MAX CURRENCY" |
 
 ## Status Flow
