@@ -28,7 +28,7 @@ describe('SOLR Integration Tests', () => {
   let solr;
 
   beforeAll(async () => {
-    solr = await import('../solr.js');
+    solr = await import('../../solr.js');
   });
 
   itIfSolr('should query SOLR for existing jobs by CIF', async () => {
