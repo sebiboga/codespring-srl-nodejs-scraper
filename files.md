@@ -25,6 +25,8 @@
 | `job-model.md` | Job schema definition (Peviitor Core) - fields, types, validation rules |
 | `company-model.md` | Company schema definition (Peviitor Core) - fields, types, validation rules |
 | `files.md` | This file - documents role of each project file |
+| `BRANCH.md` | Policy — default branch must be `main` |
+| `PUBLIC.md` | Policy — repository must be public |
 | `CHANGELOG.md` | Version history and changelog |
 | `CONTRIBUTING.md` | Contribution guidelines for developers |
 | `ISSUES.md` | Issue tracking policy (every code change needs an issue) |
