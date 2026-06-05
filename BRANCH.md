@@ -12,7 +12,7 @@ All scrapers derivate din acest template **MUST** folosi `main` ca default branc
 
 1. Default branch **MUST** fie `main` — NU `master`, `develop`, sau altceva.
 2. Orice branch `master` existent trebuie redenumit în `main`.
-3. Verificare: `gh repo view <owner>/<repo> --json default_branch`
+3. Verificare: `gh repo view <owner>/<repo> --json defaultBranchRef`
 
 ## Cum redenumești
 

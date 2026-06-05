@@ -186,7 +186,7 @@ async function main() {
         website: ["https://www.codespring.ro", "https://softech.ro"],
         career: ["https://www.codespring.ro/category/jobs"],
         lastScraped: new Date().toISOString().split('T')[0],
-        scraperFile: "https://raw.githubusercontent.com/sebiboga/codespring-srl-nodejs-scraper/master/.github/workflows/scrape.yml"
+        scraperFile: "https://raw.githubusercontent.com/sebiboga/codespring-srl-nodejs-scraper/main/.github/workflows/scrape.yml"
       });
     } catch (err) {
       console.log(`Note: Could not upsert company to SOLR core: ${err.message}`);

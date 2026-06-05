@@ -15,7 +15,7 @@ gh repo edit <owner>/<repo> \
 
 # Topics
 gh repo edit <owner>/<repo> \
-  --add-topic scraper --add-topic codespring --add-topic peviitor --add-topic jobs --add-topic romania
+  --add-topic job-seeker-ro-spider --add-topic peviitor-ro
 ```
 
 ## Web UI
