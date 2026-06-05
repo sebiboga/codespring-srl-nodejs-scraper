@@ -1,0 +1,105 @@
+{
+  "validatedAt": "2026-06-05T18:39:01.492Z",
+  "source": "ANAF",
+  "brand": "SOFTECH",
+  "anaf": {
+    "cui": 11358358,
+    "name": "SOFTECH SRL",
+    "address": "Constantin Brâncuşi, 69-71, Municipiul Cluj-Napoca, Cluj",
+    "registrationNumber": "J12/1914/1998",
+    "phone": "0264424578",
+    "fax": "",
+    "postalCode": "",
+    "caenCode": "6201",
+    "iban": "",
+    "registrationState": "INREGISTRAT din data 14.01.1999",
+    "registrationDate": "08/12/1998",
+    "fiscalAuthority": "Administraţia Fiscală pentru Contribuabili Mijlocii - Cluj",
+    "ownershipForm": "PROPR.PRIVATA-CAPITAL PRIVAT AUTOHTON",
+    "organizationForm": "PERSOANA JURIDICA",
+    "legalForm": "SRL",
+    "vatRegistered": true,
+    "vatPeriods": [
+      {
+        "start": "1999-01-14",
+        "end": null,
+        "yearStart": "",
+        "message": ""
+      }
+    ],
+    "cashBasisVat": false,
+    "cashBasisVatStart": "2013-01-01",
+    "cashBasisVatEnd": "2015-12-01",
+    "inactive": false,
+    "inactiveSince": null,
+    "reactivatedSince": null,
+    "splitVat": false,
+    "eFacturaRegistered": false,
+    "headquartersAddress": {
+      "street": "Constantin Brâncuşi",
+      "number": "69-71",
+      "locality": "Municipiul Cluj-Napoca",
+      "county": "Cluj",
+      "country": "România",
+      "postalCode": ""
+    },
+    "fiscalAddress": {
+      "street": "",
+      "number": "",
+      "locality": "",
+      "county": "",
+      "country": "",
+      "postalCode": ""
+    },
+    "administrators": [
+      {
+        "name": "SZELYES ERZSEBET EVA",
+        "role": "administrator"
+      },
+      {
+        "name": "SZELYES LEVENTE",
+        "role": "administrator"
+      }
+    ],
+    "authorizedCaenCodes": [
+      "2620",
+      "4651",
+      "4652",
+      "4741",
+      "4742",
+      "5821",
+      "6201",
+      "6202",
+      "6203",
+      "6209",
+      "6311",
+      "7021",
+      "7022",
+      "7111",
+      "7112",
+      "7120",
+      "7219",
+      "7410",
+      "7490",
+      "8219",
+      "8559",
+      "8560",
+      "9511"
+    ],
+    "onrcStatus": 1048,
+    "onrcStatusLabel": "Funcțiune"
+  },
+  "peviitor": null,
+  "summary": {
+    "company": "SOFTECH SRL",
+    "cif": "11358358",
+    "active": true,
+    "inactiveSince": null,
+    "reactivatedSince": null,
+    "address": "Constantin Brâncuşi, 69-71, Municipiul Cluj-Napoca, Cluj",
+    "registrationNumber": "J12/1914/1998",
+    "caenCode": "6201",
+    "vatRegistered": true,
+    "eFacturaRegistered": false
+  }
+}

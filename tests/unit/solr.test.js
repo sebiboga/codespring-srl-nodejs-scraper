@@ -43,7 +43,7 @@ describe('solr.js', () => {
       expect(result.numFound).toBe(3);
       expect(result.docs).toHaveLength(2);
       expect(mockFetch).toHaveBeenCalledWith(
-        expect.stringContaining('cif:11358358'),
+        expect.stringContaining('cif%3A11358358'),
         expect.any(Object)
       );
     });

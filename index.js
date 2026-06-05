@@ -96,6 +96,12 @@ async function scrapeAllListings() {
   return activeJobs;
 }
 
+function toIsoDate(rfcDate) {
+  if (!rfcDate) return new Date().toISOString();
+  const d = new Date(rfcDate);
+  return isNaN(d.getTime()) ? new Date().toISOString() : d.toISOString();
+}
+
 function mapToJobModel(rawJob, cif, companyName = COMPANY_NAME) {
   const now = new Date().toISOString();
 
@@ -106,7 +112,7 @@ function mapToJobModel(rawJob, cif, companyName = COMPANY_NAME) {
     cif: cif,
     location: rawJob.location?.length ? rawJob.location : undefined,
     workmode: rawJob.workmode || undefined,
-    date: rawJob.pubDate || now,
+    date: toIsoDate(rawJob.pubDate),
     status: "scraped"
   };
 
@@ -234,6 +240,8 @@ async function main() {
     process.exit(1);
   }
 }
+
+export { transformJobsForSOLR, mapToJobModel, parseRssJobs, toIsoDate };
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   main();
